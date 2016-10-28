@@ -20,8 +20,8 @@ If you run `./executor` as a normal user, you will notice that executor is runni
 ## This project
 In this project, I have created the backdoor.c in order to allow launching any non-bash-script file as root user(Bash is disabled to accept `s` for root user by defautl). To check whether this is working, run the following commands:
 
-  sudo gcc backdoor.cpp -o backdoor
-  sudo chmod u+s backdoor
+    sudo gcc backdoor.cpp -o backdoor
+    sudo chmod u+s backdoor
 
 Place your backdoor file anywhere on the server. To launch the backdoor, type the following:
 `./backdoor <program_name> # launches <program_name> under root user`
